@@ -45,10 +45,19 @@ languages:
       description: 
       footer:
         text: 
+      mainSections:
+        - posts
       homeInfoParams:
         Title: Mariana Jó
         Content: |
-          
+          Um espaço para escrever: um lugar para pensar em público sobre dados, tecnologia, música, jogos e o que mais quiser. Comece por [Posts](posts/) ou [Sobre](about/).
+
+          ### No momento
+
+          - 🎮 **Jogando:** Death Stranding (Director's Cut), PS5
+          - 📚 **Lendo:** Na Ponta da Língua, Caetano W. Galindo
+          - 🎧 **Ouvindo:** [Low Roar](https://open.spotify.com/artist/5WoWlP0ihSFIxnppxjwSgE?si=p26_NT2lTXqI0P-D9uJgYw)
+          - 📺 **Assistindo:** The Bear, Hacks, Euphoria
     menus:
       main:
         - identifier: posts
@@ -72,10 +81,19 @@ languages:
       description: 
       footer:
         text: 
+      mainSections:
+        - posts
       homeInfoParams:
         Title: Mariana Jó
         Content: |
-          
+          A space to write: a place to think in public about data, technology, music, games and whatever I want. Start in [Posts](en/posts/) or [About](en/about/).
+
+          ### Currently
+
+          - 🎮 **Playing:** Death Stranding (Director's Cut), PS5
+          - 📚 **Reading:** Na Ponta da Língua, Caetano W. Galindo
+          - 🎧 **Listening to:** [Low Roar](https://open.spotify.com/artist/5WoWlP0ihSFIxnppxjwSgE?si=p26_NT2lTXqI0P-D9uJgYw)
+          - 📺 **Watching:** The Bear, Hacks, Euphoria
     menus:
       main:
         - identifier: posts
@@ -92,5 +110,8 @@ languages:
           weight: 20
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
