@@ -39,3 +39,12 @@ To create a new post version:
 docker compose run --rm hugo new content posts/my-new-post.pt-br.md
 docker compose run --rm hugo new content posts/my-new-post.en.md
 ```
+
+## RSS distribution
+
+To chosse whether to distribute to dev.to and Substack, the configs are:
+
+```yaml
+distributeto_devto: true/talse
+distributeto_substack: true/false
+```

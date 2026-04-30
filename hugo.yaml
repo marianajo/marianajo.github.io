@@ -12,10 +12,20 @@ caches:
   images:
     dir: :cacheDir/images
 
+outputFormats:
+  RSS_DEVTO:
+    baseName: devto
+    mediaType: application/rss+xml
+  RSS_SUBSTACK:
+    baseName: substack
+    mediaType: application/rss+xml
+
 outputs:
   home:
     - HTML
     - RSS
+    - RSS_DEVTO
+    - RSS_SUBSTACK
 
 taxonomies:
   tag: tags

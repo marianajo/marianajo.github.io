@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Site.Title }} (Dev.to)</title>
+    <link>{{ .Permalink }}</link>
+    <description>Posts filtrados para o Dev.to</description>
+    {{- $pages := where .Site.RegularPages "Params.distribute_devto" "==" true -}}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <description>{{ .Content | html }}</description>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid>{{ .Permalink }}</guid>
+    </item>
+    {{- end }}
+  </channel>
+</rss>
