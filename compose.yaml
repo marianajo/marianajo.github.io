@@ -1,0 +1,9 @@
+services:
+  hugo:
+    image: ghcr.io/gohugoio/hugo:v0.160.1
+    working_dir: /src
+    volumes:
+      - .:/src
+    ports:
+      - "1313:1313"
+    command: server --bind 0.0.0.0 --buildDrafts --disableFastRender

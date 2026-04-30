@@ -1,0 +1,96 @@
+baseURL: https://marianajo.github.io/
+title: Mariana Jó
+theme: PaperMod
+enableRobotsTXT: true
+defaultContentLanguage: pt-br
+defaultContentLanguageInSubdir: false
+
+pagination:
+  pagerSize: 10
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+taxonomies:
+  tag: tags
+  category: categories
+
+params:
+  env: production
+  defaultTheme: auto
+  disableThemeToggle: false
+  displayFullLangName: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: false
+  ShowShareButtons: false
+  ShowToc: false
+  ShowRssButtonInSectionTermList: true
+  mainSections:
+    - posts
+
+languages:
+  pt-br:
+    languageCode: pt-BR
+    languageName: Português
+    weight: 1
+    params:
+      description: 
+      footer:
+        text: 
+      homeInfoParams:
+        Title: Mariana Jó
+        Content: |
+          
+    menus:
+      main:
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: 10
+        - identifier: categories
+          name: Categorias
+          url: /categories/
+          weight: 15
+        - identifier: about
+          name: Sobre
+          url: /about/
+          weight: 20
+
+  en:
+    languageCode: en-US
+    languageName: English
+    weight: 2
+    params:
+      description: 
+      footer:
+        text: 
+      homeInfoParams:
+        Title: Mariana Jó
+        Content: |
+          
+    menus:
+      main:
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: 10
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 15
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+
+markup:
+  highlight:
+    noClasses: false
